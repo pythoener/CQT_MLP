@@ -1,0 +1,17 @@
+*.asv
+*.m~
+*.autosave
+*.bak
+*.tmp
+*.mex*
+*.p
+slprj/
+sccprj/
+codegen/
+cache/
+.idea/
+.ipynb_checkpoints/
+Thumbs.db
+.DS_Store
+venv/
+.venv/
