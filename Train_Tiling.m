@@ -8,7 +8,7 @@
 % MODEL : 336-D → 336-D MLP │
 % ------------------------------------------------------------
 %% ---------------- user paths -------------------------------------------
-timitRoot = "E:\Raw Data\TIMIT_BWE_SF\04_test_clean\OriginalHigh";
+timitRoot = "DSET\train\clean";
 modelOut = "Model_0.mat";
 %% ---------------- CQT parameters ---------------------------------------
 fs = 16e3;

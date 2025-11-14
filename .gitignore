@@ -15,3 +15,8 @@ Thumbs.db
 .DS_Store
 venv/
 .venv/
+slprj/
+sccprj/
+codegen/
+cache/
+.idea/

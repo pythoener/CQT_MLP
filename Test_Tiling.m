@@ -6,10 +6,18 @@
 % • reconstructs a 16-kHz waveform with ICQT,
 % • evaluates STOI + PESQ, keeps best / worst, saves output wavs
 % -------------------------------------------------------------
-TEST_ORIG = "E:\Raw Data\TIMIT_BWE_SF\04_test_clean\OriginalHigh";
-TEST_LP = "E:\Raw Data\TIMIT_BWE_SF\04_test_clean\shifted";
-OUT_ROOT = "E:\results\verwerfen";
+TEST_ORIG = "DSET\test\clean";
+TEST_LP   = "DSET\test\upsampled";
+OUT_ROOT  = "RSLTS\predicted";
 MODEL_FILE= "Model_0.mat";
+
+% --------- make paths absolute (works for relative *and* absolute) ------
+here      = string(fileparts(mfilename("fullpath")));  % folder of this script
+TEST_ORIG = fullfile(here, TEST_ORIG);
+TEST_LP   = fullfile(here, TEST_LP);
+OUT_ROOT  = fullfile(here, OUT_ROOT);
+MODEL_FILE= fullfile(here, MODEL_FILE);
+
 % ------------ analysis parameters ---------------------------------------
 fs = 16e3;
 binsPerOct = 48;
